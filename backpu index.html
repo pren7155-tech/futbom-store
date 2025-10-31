@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FUTBOM STORE - Links</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: linear-gradient(-45deg, #000000, #001933, #002b55, #000000);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+  }
+
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .container {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(15px);
+    padding: 30px 15px 40px 15px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  }
+
+  h1 {
+    font-weight: 900;
+    font-size: 1.9rem;
+    margin: 0;
+    margin-bottom: 8px;
+    color: #2f80ed;
+    letter-spacing: 1px;
+  }
+
+  .logo {
+    width: 120px;
+    height: auto;
+    margin: 10px 0 25px 0;
+  }
+
+  /* === BOTÕES COM ANIMAÇÃO === */
+  .link-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(135deg, #001f3f, #004f6e, #001f3f, #004f6e);
+    background-size: 300% 300%;
+    animation: buttonGradient 6s ease infinite;
+    border-radius: 12px;
+    padding: 12px 18px;
+    margin-bottom: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    gap: 15px;
+  }
+
+  @keyframes buttonGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .link-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(30,136,229,0.7);
+  }
+
+  .icon-circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+
+  .icon-circle img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>FUTBOM STORE</h1>
+    <img src="logo.png" alt="Logo Futbom Store" class="logo">
+
+    <a class="link-button" href="https://api.whatsapp.com/send/?phone=5521968651633&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+      <div class="icon-circle">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+      </div>
+      VENDEDOR - WHATSAPP
+    </a>
+
+    <a class="link-button" href="https://chat.whatsapp.com/FjjEIDQgtgc0z0rjfwHMaq" target="_blank" rel="noopener noreferrer">
+      <div class="icon-circle">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Grupo WhatsApp" />
+      </div>
+      GRUPO VIP - FIQUE POR DENTRO DOS NOSSOS LANÇAMENTOS
+    </a>
+
+    <a class="link-button" href="https://futbomstore.com.br" target="_blank" rel="noopener noreferrer">
+      <div class="icon-circle">
+        <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Site Futbom" />
+      </div>
+      COMPRE DIRETO EM NOSSO SITE
+    </a>
+  </div>
+</body>
+</html>
